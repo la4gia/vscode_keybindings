@@ -34,22 +34,22 @@
 
     // VIM-LIKE CURSOR MOVEMENTS
     {
-        "key": "ctrl+space h",
+        "key": "ctrl+space ctrl+h",
         "command": "cursorLeft",
         "when": "text input focus"
     },
     {
-        "key": "ctrl+space l",
+        "key": "ctrl+space ctrl+l",
         "command": "cursorRight",
         "when": "text input focus"
     },
     {
-        "key": "ctrl+space j",
+        "key": "ctrl+space ctrl+j",
         "command": "cursorDown",
         "when": "text input focus"
     },
     {
-        "key": "ctrl+space k",
+        "key": "ctrl+space ctrl+k",
         "command": "cursorUp",
         "when": "text input focus"
     },
@@ -58,5 +58,12 @@
     {
         "key": "ctrl+h",
         "command": "deleteLeft",
+    },
+
+    // SET TERMINAL-LIKE ENTER FOR SUGGESTIONS
+    {
+        "key": "ctrl+j",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
     }
 ]  
