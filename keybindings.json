@@ -45,12 +45,12 @@
     },
     {
         "key": "ctrl+space j",
-        "command": "cursorUp",
+        "command": "cursorDown",
         "when": "text input focus"
     },
     {
         "key": "ctrl+space k",
-        "command": "cursorDown",
+        "command": "cursorUp",
         "when": "text input focus"
     },
 
