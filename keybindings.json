@@ -1,0 +1,62 @@
+[
+    // SET NEW TOGGLE PANEL
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.togglePanel" 
+    },
+    // UNSET PANEL TOGGLE (ALLOWS CTRL+j IN TERMINAL)
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    
+    // FOR TABBING THROUGH SUGGESTIONS 
+    {
+        "key": "tab",
+        "command": "selectNextQuickFix",
+        "when": "editorFocus && quickFixWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevQuickFix",
+        "when": "editorFocus && quickFixWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+
+    // VIM-LIKE CURSOR MOVEMENTS
+    {
+        "key": "ctrl+space h",
+        "command": "cursorLeft",
+        "when": "text input focus"
+    },
+    {
+        "key": "ctrl+space l",
+        "command": "cursorRight",
+        "when": "text input focus"
+    },
+    {
+        "key": "ctrl+space j",
+        "command": "cursorUp",
+        "when": "text input focus"
+    },
+    {
+        "key": "ctrl+space k",
+        "command": "cursorDown",
+        "when": "text input focus"
+    },
+
+    // SET TERMINAL-LIKE DELETE
+    {
+        "key": "ctrl+h",
+        "command": "deleteLeft",
+    }
+]  
